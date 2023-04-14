@@ -4,7 +4,7 @@ function convertDetailToPokemon(pokeDetails) {
   const pokemon = new Pokemon();
 
   pokemon.name = pokeDetails.name;
-  pokemon.number = pokeDetails.order;
+  pokemon.number = pokeDetails.id;
   pokemon.types = pokeDetails.types.map((typeSlot) => typeSlot.type.name);
   pokemon.type = pokemon.types[0];
   pokemon.photo = pokeDetails.sprites.other.dream_world.front_default;
